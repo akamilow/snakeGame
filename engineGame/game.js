@@ -7,15 +7,15 @@ import { outSideGrid } from './grid.js'
 let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board')
+const score = document.getElementById('scoreBoard')
 
 function main(currentTime) {
     if (gameOver) {
-        if (confirm('YOU LOSE!')) {
-            window.location = '/'
+        if (confirm('GAME OVER! Reset the game')) {
         }
         return
     }
-    
+
     window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
     if (secondsSinceLastRender < 1 / SNAKE_SPEED) return 
@@ -42,4 +42,21 @@ function draw() {
 
 function checkDeath() {
     gameOver = outSideGrid(getSnakeHead()) || snakeIntersection() 
+}
+
+// ---------------------------------------------------------------------------- //
+
+var randomColor = function() {
+
+    var rvalue = function() {
+        return Math.round(Math.random()*255); 
+    }
+    return 'rgb(' + rvalue() + "," + rvalue() + "," + rvalue() + ")";
+}
+  
+var button = document.querySelector('button');
+  
+button.onclick = function(){
+    this.style.backgroundColor = randomColor();
+    window.location = '/'
 }

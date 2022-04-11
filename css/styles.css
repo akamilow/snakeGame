@@ -1,3 +1,7 @@
+* {
+    font-family: monospace;
+}
+
 body {
     min-height: 100vh;
     width: 100vw;
@@ -6,6 +10,11 @@ body {
     align-items: center;
     margin: 0;
     background-color: beige;
+}
+
+h1 {
+    font-size: 30px;
+    padding-right: 15px;
 }
 
 #game-board {
@@ -19,10 +28,21 @@ body {
 
 .snake{
     background-color: rgba(52, 51, 51, 0.779);
-    border: .25vmin solid rgba(0, 0, 0, 0.247);
+    border: .25vmin solid rgba(16, 16, 16, 0.044);
 }
 
 .food {
-    background-color: rgb(190, 17, 17);
-    border: .25vmin solid rgba(21, 21, 21, 0.499);
+    background-color: rgba(207, 24, 24, 0.69);
+    border: .25vmin solid rgba(255, 8, 8, 0.295);
+}
+
+/*---------------------------------------*/
+
+#reset {
+    font-size: 15px;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+    margin: 420px 0 0 10px;
+    background-color: rgb(250, 231, 57);
 }

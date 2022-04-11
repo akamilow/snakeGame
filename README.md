@@ -12,7 +12,7 @@ Portfolio proyect made by Camilo Castellar.
 
 ## Demo
 
-https://github.com/akamilow/snakeGame/
+https://akamilow.github.io/snakeGame/
 
 
 ## 🔗 Links

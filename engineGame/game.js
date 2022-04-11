@@ -58,5 +58,5 @@ var button = document.querySelector('button');
   
 button.onclick = function(){
     this.style.backgroundColor = randomColor();
-    window.location = '/'
+    window.location = 'https://akamilow.github.io/snakeGame/'
 }

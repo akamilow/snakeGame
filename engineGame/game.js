@@ -10,7 +10,7 @@ const gameBoard = document.getElementById('game-board')
 
 function main(currentTime) {
     if (gameOver) {
-        document.querySelector(".board-info").innerHTML = "<h1> ¡GAME OVER! <br><br> PRESS <br> ENTER <br> TO <br> CONTINUE </h1>"
+        document.querySelector(".board-info").innerHTML = "<h1> ¡GAME OVER! <br><br> PRESS <br> <em>\"ENTER\"</em> <br> TO <br> CONTINUE </h1>"
         window.addEventListener("keyup", function (e) {
             if ( e.key == "Enter") {
                 window.location.href='https://camilocastellar.me/snakeGame/';

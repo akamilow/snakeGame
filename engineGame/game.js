@@ -10,10 +10,10 @@ const gameBoard = document.getElementById('game-board')
 
 function main(currentTime) {
     if (gameOver) {
-        document.querySelector(".board-info").innerHTML = "<h1> ¡GAME OVER! <br><br> PRESS <br> <em>\"ENTER\"</em> <br> TO <br> CONTINUE </h1>"
+        document.querySelector(".board-info").innerHTML = "<h1> ¡GAME OVER! <br><br> Presiona <br> <em>\"ENTER\"</em> <br> para <br> continuar </h1>"
         window.addEventListener("keyup", function (e) {
             if ( e.key == "Enter") {
-                window.location.href='https://camilocastellar.me/snakeGame/';
+                window.location.href='https://akamilow.github.io/snakeGame/';
             }
         })
         return
@@ -61,5 +61,5 @@ var button = document.querySelector('button');
   
 button.onclick = function() {
     this.style.backgroundColor = randomColor();
-    window.location.href='https://camilocastellar.me/snakeGame/'
+    window.location.href='https://akamilow.github.io/snakeGame/';
 }
